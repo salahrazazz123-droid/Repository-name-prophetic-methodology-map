@@ -238,9 +238,10 @@ EXAMPLES = {
 # ═══════════════════════════════════════════════════════
 def analyze_hadith(hadith_text, api_key):
     models_to_try = [
-        "gemini-2.0-flash-lite",
-        "gemini-2.0-flash",
-        "gemini-2.5-flash",
+    "gemini-flash-latest",
+    "gemini-flash-lite-latest",
+    "gemini-2.5-flash",
+    "gemini-3.5-flash-lite",
     ]
     last_error = None
     for model_name in models_to_try:
